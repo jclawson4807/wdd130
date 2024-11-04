@@ -1,9 +1,10 @@
 .callout {
-    position: relative;
-	color: white;
-    background-color: #213B69;
     max-width: 491px;
-    padding: 7px;
+    margin: 15px;
+    border: 7px solid white; 
+    padding: 18px;
+    background-color: #213B69;
+	color: white;
 }
 
 .callout img {
