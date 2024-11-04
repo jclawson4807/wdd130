@@ -27,7 +27,10 @@ blockquote {
 }
 
 cite {
-    /* float: right;
-	text-align: right;
-    font-style: italic; */
+    display: block;
+    text-align: right;
+    font-style: italic;
+    border-top: white dotted 1px;
+    padding-top: 2px;
+    font-size: .8em;
 }
