@@ -1,5 +1,14 @@
+:root {
+    --primary-theme-color: darkblue;
+    --default-border-width: 1px;
+    --default-border-style: solid;
+    --default-border-color: black;
+    --default-image-height: auto;
+    --default-margin-and-padding: 1rem;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--primary-theme-color);
     padding: 10px;
 }
 
@@ -10,13 +19,13 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-theme-color);
 }
 
 main img {
     width: 150px;
-    height: auto;
-    border: 1px solid black;
+    height: var(--default-image-height);
+    border: var(--default-border-width) var(--default-border-style) var(--default-border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -31,20 +40,20 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
+    margin: var(--default-margin-and-padding);
+    border: var(--default-border-width) var(--default-border-style) rgba(0, 0, 0, 0.2);
+    padding: var(--default-margin-and-padding);
     background-color: #eee;
     color: #333;
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--default-image-height);
 }
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--default-border-width) var(--default-border-style) var(--default-border-color);
     text-align: center;
 }
