@@ -53,7 +53,14 @@ main {
 }
 
 aside {
+    position: relative;
     width: 20rem;
+}
+
+aside h2 {
+    position: absolute;
+    left: 20px;
+    top: 15px;
 }
 
 aside img {
