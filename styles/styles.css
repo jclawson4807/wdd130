@@ -1,10 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-theme-color: darkblue;
+    --primary-theme-color-monochromatic-match: #0000BE;
     --default-border-width: 1px;
     --default-border-style: solid;
     --default-border-color: black;
     --default-image-height: auto;
     --default-margin-and-padding: 1rem;
+    --primary-theme-text-color: white;
+    --byu-theme-blue: #002d60;
+    --byu-theme-new-link: white;
+    --byu-theme-visited-link: #9BCAFF;
+    --byu-theme-bullet-color: #001832;
+    --secondary-theme-text-color: black;
 }
 
 nav {
@@ -13,7 +26,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--primary-theme-text-color);
     display: block;
     padding: 20px;
 }
@@ -23,6 +36,7 @@ h1 {
 }
 
 main img {
+    float: right;
     width: 150px;
     height: var(--default-image-height);
     border: var(--default-border-width) var(--default-border-style) var(--default-border-color);
@@ -40,11 +54,6 @@ main {
 
 aside {
     width: 20rem;
-    margin: var(--default-margin-and-padding);
-    border: var(--default-border-width) var(--default-border-style) rgba(0, 0, 0, 0.2);
-    padding: var(--default-margin-and-padding);
-    background-color: #eee;
-    color: #333;
 }
 
 aside img {
@@ -56,4 +65,42 @@ footer {
     margin-top: 15px;
     border-top: var(--default-border-width) var(--default-border-style) var(--default-border-color);
     text-align: center;
+}
+
+a:link {
+    color: var(--byu-theme-new-link);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--byu-theme-visited-link);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+li::marker {
+    color: var(--byu-theme-bullet-color);
+}
+
+/* Class Selectors */
+
+.box {
+    margin: var(--default-margin-and-padding);
+    border: var(--default-border-width) var(--default-border-style) rgba(0,0,0,.1);
+    padding: var(--default-margin-and-padding);
+    background-color: var(--byu-theme-blue);
+    color: var(--primary-theme-text-color);
 }
