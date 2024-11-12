@@ -10,7 +10,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: var(--text-font);
 }
 
 header, main, footer {
@@ -121,5 +120,3 @@ p {
     width: 50px;
     height: 50px;
 }
-
-.sociallinks a
