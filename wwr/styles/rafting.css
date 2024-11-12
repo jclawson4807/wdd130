@@ -1,7 +1,7 @@
 :root {
     --primary-color: #C3B299;
     --secondary-color: #0D2149;
-    --accent1-color: #98A9C3;
+    --accent1-color: #FFFFFF;
     --accent2-color: #E6961D;
     --heading-font: Gruppo;
     --text-font: Baskervville;
@@ -13,12 +13,13 @@ body {
     font-family: var(--text-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
+header, main, footer {
+    max-width: 1280px;
+    margin: auto;
 }
 
-a {
-    text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
 }
 
 header {
@@ -47,4 +48,67 @@ header nav a {
     font-family: var(--heading-font);
     font-weight: bold;
     font-size: 1.5em;
+    text-decoration: none;
 }
+
+.hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;    
+}
+
+.hero h1 {
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    color: var(--accent1-color);
+}
+
+.hero article {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 150px;
+}
+
+.hero article p {
+    color: var(--accent1-color);
+    font-family: var(--text-font);
+    width: calc(100% - 120px);
+    position: relative;
+    float: left;
+}
+
+.hero article img {
+    width: 100px;
+    height: auto;
+    box-sizing: border-box;
+    margin-left: 10px;
+    position: relative;
+    float: right;
+}
+
+p {
+    font-family: var(--text-font);
+    padding: 10px;
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+.sociallinks a img {
+    width: 50px;
+    height: 50px;
+}
+
+.sociallinks a
