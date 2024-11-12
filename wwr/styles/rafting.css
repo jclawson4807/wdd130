@@ -70,7 +70,7 @@ header nav a {
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
     font-weight: bold;
     position: absolute;
@@ -83,12 +83,17 @@ header nav a {
     position: absolute;
     width: 80%;
     left: 10%;
-    top: 100px;
+    top: 150px;
+    background-color: rgba(255,  255, 255, 0.05);
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
 }
 
 .hero article p {
+    /* color: var(--secondary-color); */
     color: var(--accent1-color);
     font-family: var(--text-font);
+    font-size: 1.2em;
     width: calc(100% - 120px);
     margin: 0;
     padding: 0;
