@@ -89,7 +89,6 @@ header nav a {
 }
 
 .hero article p {
-    /* color: var(--secondary-color); */
     color: var(--accent1-color);
     font-family: var(--text-font);
     font-size: 1.2em;
