@@ -49,22 +49,30 @@ h1 {
     padding: 1rem;
 }
 
+main {
+    grid-column: 2 / 3;
+    margin: 1rem;
+}
+
 main img {
     float: right;
     width: 150px;
     height: var(--default-image-height);
     border: var(--default-border-width) var(--default-border-style) var(--default-border-color);
     padding: 2px;
+    margin: 1rem;
     box-shadow: 0 0 30px gray;
 }
 
 p {
-    padding: 0;
+    padding: 1rem;
 }
 
 aside {
     position: relative;
     width: 20rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 aside h2 {
@@ -78,7 +86,7 @@ aside img {
     height: var(--default-image-height);
 }
 
-header, footer, main {
+header, footer, .grid {
     max-width: 840px;
     margin: 0 auto;
 }
@@ -87,6 +95,11 @@ footer {
     margin-top: 15px;
     border-top: var(--default-border-width) var(--default-border-style) var(--default-border-color);
     text-align: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 a:link {
