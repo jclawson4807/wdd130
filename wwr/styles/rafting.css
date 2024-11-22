@@ -31,7 +31,7 @@ header {
 	grid-template-columns: 150px 3fr;
 	align-items: center;
 	border-bottom: 1px solid #ccc;
-	max-width: 1000px;
+	max-width: 1280px;
 
 }
 
@@ -112,18 +112,24 @@ header nav a {
 
 .adventure_section {
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-content: space-evenly;
     justify-items: center;
+    max-width: 1280px;
+    margin: 0;
+    padding: 0;
 }
 
 .adventure_section h2 {
     grid-column: 1 / span 5;
     text-align: center;
 }
-
 .adventure_section figure {
     grid-row: 2 / span 1;
+    margin: 0;
+    padding: 0;
+    width: 200px;
 }
 
 .adventure_figure_1 {
@@ -147,8 +153,10 @@ header nav a {
 }
 
 .adventure_section figure img {
-    width: 100px;
+    width: 200px;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 p {
