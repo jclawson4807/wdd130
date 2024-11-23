@@ -97,13 +97,13 @@ header nav a {
     color: var(--accent1-color);
     font-family: var(--text-font);
     font-size: 1.2em;
-    width: calc(100% - 120px);
+    width: calc(100% - 145px);
     margin: 0;
     padding: 0;
 }
 
 .hero article img {
-    width: 100px;
+    width: 130px;
     height: auto;
     box-sizing: border-box;
     margin: 10px;
