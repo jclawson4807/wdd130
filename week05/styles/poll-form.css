@@ -96,6 +96,10 @@ input[type="checkbox"] {
     vertical-align: bottom;
 }
 
+input[type="text"], input[type="email"]  {
+    border: var(--border-width) var(--border-style) var(--label-color);    
+}
+
 button {
     color: var(--document-background-color);
     background-color: var(--header-color);
@@ -134,5 +138,12 @@ footer {
 
 .column2 {
     grid-template-columns: 1fr 2fr;
+}
+
+.text_area_label {
+    width: 100%;
+    text-align: center;
+    padding-left: 22px;
+    padding-bottom: 10px;;
 }
 
