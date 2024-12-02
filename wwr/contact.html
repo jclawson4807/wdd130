@@ -23,7 +23,40 @@
         </header>
         <main>
             <form>
-
+                <h1>Send us a message</h1>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-item">
+                        <label for="username">Name</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="form-item">
+                        <label for="useremail">Email</label>
+                        <input type="email" id="useremail" name="useremail">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Reason for contacting us</legend>
+                    <div class="form-item">
+                        <!-- <label for="reasonforcontact">Reason for contacting us</label> -->
+                        <input type="radio" id="general_inquiry" name="reason_for_contact" value="General Inquiry">
+                        <label for="general_inquiry">General Inquiry</label><br>
+                        <input type="radio" id="reservation_question" name="reason_for_contact" value="Reservation Question">
+                        <label for="reservation_question">Reservation Question</label><br>
+                        <input type="radio" id="websitesuggestion" name="reason_for_contact" value="Website Suggestion">
+                        <label for="websitesuggestion">Website Suggestion</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="message" class="text_area_label">How can we help?</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                </fieldset>
+                <div class="form-item" id="subscription_checkbox_div">
+                    <label for="subscribe_me">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="subscribe_me" name="subscribe_me">
+                </div>
+                <button type="submit">Send Message</button>
             </form>
             <section id="company_contact_section">
 
