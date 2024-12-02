@@ -167,6 +167,7 @@ nav a:hover {
     grid-column: 1 / span 5;
     text-align: center;
 }
+
 .adventure_section figure {
     grid-row: 2 / span 1;
     margin: 0;
@@ -207,6 +208,61 @@ nav a:hover {
     padding: 0;
 }
 
+main .employee_gallery_section {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+}
+
+.employee_gallery_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    max-width: 1280px;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.employee_gallery_section h2 {
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+
+.employee_gallery_section figure {
+    grid-row: 2 / span 1;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+.employee_gallery_section figure figcaption {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    width: 200px;
+    text-align: center;    
+}
+
+.employee_gallery_section {
+    grid-column: 1 / span 1;
+}
+
+.employee_gallery_section {
+    grid-column: 2 / span 1;
+}
+
+.employee_gallery_section {
+    grid-column: 3 / span 1;
+}
+
+.employee_gallery_section figure img {
+    width: 200px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
 p {
     font-family: var(--text-font);
     padding: 10px;
@@ -236,4 +292,24 @@ footer p {
 .sociallinks a img {
     width: 50px;
     height: 50px;
+}
+
+.contact_us_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+form {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+}
+
+#office_information_section {
+    grid-column: 2 / span 1;
+}
+
+#google_map {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;    
 }
