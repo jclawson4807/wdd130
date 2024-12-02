@@ -342,7 +342,7 @@ input, input[type="radio"], textarea {
 input[type="checkbox"] {
     width: 22px;
     height: 22px;
-    vertical-align: top;
+    vertical-align: center;
 }
 
 input[type="text"], input[type="email"]  {
@@ -351,7 +351,7 @@ input[type="text"], input[type="email"]  {
 
 .subscription_checkbox_label {
     padding-left: 5px;
-    vertical-align: center;
+    line-height: 22px;
 }
 
 button {
