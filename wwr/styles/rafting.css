@@ -342,11 +342,16 @@ input, input[type="radio"], textarea {
 input[type="checkbox"] {
     width: 22px;
     height: 22px;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 
 input[type="text"], input[type="email"]  {
     border: var(--form-border-width) var(--form-border-style) var(--secondary-color);    
+}
+
+.subscription_checkbox_label {
+    padding-left: 5px;
+    vertical-align: center;
 }
 
 button {
