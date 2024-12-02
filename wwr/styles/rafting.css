@@ -356,11 +356,11 @@ input[type="text"], input[type="email"]  {
 
 button {
     color: var(--accent1-color);
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     width: 200px;
     height: 60px;
     padding: 1rem;
-    border: var(--form-border-width) var(--form-border-style) var(--accent2-color);
+    border: var(--form-border-width) var(--form-border-style) var(--secondary-color);
     border-radius: 0.5rem;
     margin: 0 auto;
     margin-top: 20px;
@@ -369,7 +369,7 @@ button {
 
 button:hover {
     background-color: var(--accent1-color);
-    color: var(--accent2-color);    
+    color: var(--secondary-color);    
 }
 
 #office_information_section {
