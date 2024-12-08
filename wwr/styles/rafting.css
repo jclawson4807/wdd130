@@ -11,9 +11,14 @@
     --form-background-color: #C3B1997A;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: var(--text-font);
 }
 
 header, main, footer {
@@ -40,7 +45,6 @@ header {
 .logo_img {
     height: 150px;
     width: 150px;
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -96,13 +100,12 @@ a:hover {
     right: 60px;
     top: 150px;
     background-color: rgba(13,  33, 73, 0.8);
-    padding: 10px;
+    padding: 1em;
     border: 1px solid var(--secondary-color);
 }
 
 .hero article p {
     color: var(--accent1-color);
-    font-family: var(--text-font);
     font-size: 1.2em;
     width: calc(100% - 145px);
     margin: 0;
@@ -112,8 +115,7 @@ a:hover {
 .hero article img {
     width: 130px;
     height: auto;
-    box-sizing: border-box;
-    margin: 10px;
+    margin: 1em;
     position: relative;
     float: right;
 }
@@ -125,9 +127,9 @@ a:hover {
     justify-content: space-evenly;
     justify-items: center;
     max-width: 1280px;
-    margin-top: 40px;
+    margin-top: 3em;
     padding: 0;
-    column-gap: 25px;
+    gap: 0 25px;
 }
 
 .history_section h2 {
@@ -136,7 +138,7 @@ a:hover {
 }
 
 .history_section p {
-    grid-row: 2 / span 1;
+    grid-row: 2;
     margin: 0;
     padding: 0;
     align-self: self-start;
@@ -151,8 +153,8 @@ a:hover {
 }
 
 .history_section img {
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
+    grid-column: 3;
+    grid-row: 2;
     margin: 0;
     padding: 0;
     width: 300px;
@@ -166,7 +168,7 @@ a:hover {
     justify-content: space-evenly;
     justify-items: center;
     max-width: 1280px;
-    margin-top: 50px;
+    margin-top: 3em;
     padding: 0;
 }
 
@@ -176,7 +178,7 @@ a:hover {
 }
 
 .adventure_section figure {
-    grid-row: 2 / span 1;
+    grid-row: 2;
     margin: 0;
     padding: 0;
     width: 200px;
@@ -189,23 +191,23 @@ a:hover {
 }
 
 .adventure_figure_1 {
-    grid-column: 1 / span 1;
+    grid-column: 1;
 }
 
 .adventure_figure_2 {
-    grid-column: 2 / span 1;
+    grid-column: 2;
 }
 
 .adventure_figure_3 {
-    grid-column: 3 / span 1;
+    grid-column: 3;
 }
 
 .adventure_figure_4 {
-    grid-column: 4 / span 1;
+    grid-column: 4;
 }
 
 .adventure_figure_5 {
-    grid-column: 5 / span 1;
+    grid-column: 5;
 }
 
 .adventure_section figure img {
@@ -217,7 +219,7 @@ a:hover {
 
 main .employee_gallery_section {
     grid-column: 1 / span 2;
-    grid-row: 4 / span 1;
+    grid-row: 4;
 }
 
 .employee_gallery_section {
@@ -227,7 +229,7 @@ main .employee_gallery_section {
     justify-content: space-evenly;
     justify-items: center;
     max-width: 1280px;
-    margin-top: 50px;
+    margin-top: 3em;
     padding: 0;
 }
 
@@ -237,7 +239,7 @@ main .employee_gallery_section {
 }
 
 .employee_gallery_section figure {
-    grid-row: 2 / span 1;
+    grid-row: 2;
     margin: 0;
     padding: 0;
     width: 200px;
@@ -245,22 +247,22 @@ main .employee_gallery_section {
 
 .employee_gallery_section figure figcaption {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 1em;
     padding: 0;
     width: 200px;
     text-align: center;    
 }
 
 .employee_gallery_section {
-    grid-column: 1 / span 1;
+    grid-column: 1;
 }
 
 .employee_gallery_section {
-    grid-column: 2 / span 1;
+    grid-column: 2;
 }
 
 .employee_gallery_section {
-    grid-column: 3 / span 1;
+    grid-column: 3;
 }
 
 .employee_gallery_section figure img {
@@ -271,29 +273,27 @@ main .employee_gallery_section {
 }
 
 p {
-    font-family: var(--text-font);
-    padding: 10px;
+    padding: 1em;
 }
 
 .contact_us_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 80px 170px 600px 295px; */
-    column-gap: 20px;
+    gap: 0 20px;
 }
 
 .contact_us_page_h1 {
     grid-column: 1 / span 2; 
-    grid-row: 1 / span 1; 
+    grid-row: 1; 
     text-align: center;
-    margin-top: 20px;  
+    margin-top: 2em;  
 }
 
 form {
-    grid-column: 1 / span 1;
+    grid-column: 1;
     grid-row: 2 / span 2;
     margin: 0;
-    box-sizing: border-box;
     max-width: var(--form-max-width);
     padding-top: 0;
     padding-left: 1rem;
@@ -350,7 +350,7 @@ input[type="text"], input[type="email"]  {
 }
 
 .subscription_checkbox_label {
-    padding-left: 5px;
+    padding-left: 0.1em;
     line-height: 22px;
 }
 
@@ -362,8 +362,7 @@ button {
     padding: 1rem;
     border: var(--form-border-width) var(--form-border-style) var(--secondary-color);
     border-radius: 0.5rem;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 2em auto 0 auto;
     font-size: 1.2rem;
 }
 
@@ -372,42 +371,42 @@ button:hover {
     color: var(--secondary-color);    
 }
 
-#office_information_section {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
+.office_information_section {
+    grid-column: 2;
+    grid-row: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 150px;
 }
 
-#office_information_section h2 {
+.office_information_section h2 {
     grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
+    grid-row: 1;
     height: 20px;
 }
 
-#office_information_section p {
+.office_information_section p {
     height: 50px;
-    grid-row: 2 / span 1;
+    grid-row: 2;
 }
 
 .office_information_street_address {
-    grid-column: 1 / span 1;
+    grid-column: 1;
 }
 
 .office_information_contact_info {
-    grid-column: 2 / span 1;
+    grid-column: 2;
 }
 
-#google_map {
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
+.google_map {
+    grid-column: 2;
+    grid-row: 3;
     height: 596px;
 }
 
 
 footer {
-    margin-top: 50px;
+    margin-top: 5em;
     display: grid;
     grid-template-columns: auto 150px;
     align-items: center;
