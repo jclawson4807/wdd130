@@ -412,6 +412,7 @@ footer {
     grid-template-columns: auto 150px;
     align-items: center;
     justify-self: center;
+    background-color: var(--primary-color);
 }
 
 footer p {
