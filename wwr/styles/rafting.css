@@ -278,7 +278,7 @@ p {
 .contact_us_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 170px 600px 295px;
+    /* grid-template-rows: 80px 170px 600px 295px; */
     column-gap: 20px;
 }
 
@@ -377,7 +377,7 @@ button:hover {
     grid-row: 2 / span 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-height: 120px;
+    height: 150px;
 }
 
 #office_information_section h2 {
@@ -402,6 +402,7 @@ button:hover {
 #google_map {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
+    height: 596px;
 }
 
 
