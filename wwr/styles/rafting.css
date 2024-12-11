@@ -5,6 +5,7 @@
     --accent2-color: #E6961D;
     --heading-font: Gruppo;
     --text-font: Baskervville;
+    --page-max-width: 1280px;
     --form-max-width: 650px;
     --form-border-width: 1px;
     --form-border-style: solid;
@@ -22,7 +23,7 @@ body {
 }
 
 header, main, footer {
-    max-width: 1280px;
+    max-width: var(--page-max-width);
     margin: auto;
     padding: 0;
 }
@@ -39,7 +40,7 @@ header {
     display: grid;
 	grid-template-columns: 150px 3fr;
 	align-items: center;
-	max-width: 1280px;
+	max-width: var(--page-max-width);
 }
 
 .logo_img {
@@ -130,7 +131,6 @@ a:hover {
     grid-column: 1 / span 6;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* grid-template-rows: repeat(6, 1fr); */
 }
 
 .antihero img {
@@ -167,13 +167,65 @@ a:hover {
     margin: 0 auto;
 }
 
+.popular_trips_section {
+    grid-column: 1 / span 6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    max-width: var(--page-max-width);
+    margin-top: 3em;
+    padding: 0;
+    gap: 20px;
+}
+
+.popular_trips_section h2 {
+    grid-column: 1 / span 3;
+    text-align: center;
+    width: 100%;
+}
+
+.popular_trips_section figure {
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.popular_trips_section figure figcaption {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    height: 150px;   
+}
+
+.popular_trips_figure_1 {
+    grid-column: 1;
+}
+
+.popular_trips_figure_2 {
+    grid-column: 2;
+}
+
+.popular_trips_figure_3 {
+    grid-column: 3;
+}
+
+.popular_trips_section figure img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
 .history_section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-content: space-evenly;
     justify-items: center;
-    max-width: 1280px;
+    max-width: var(--page-max-width);
     margin-top: 3em;
     padding: 0;
     gap: 0 25px;
@@ -214,7 +266,7 @@ a:hover {
     align-items: center;
     justify-content: space-evenly;
     justify-items: center;
-    max-width: 1280px;
+    max-width: var(--page-max-width);
     margin-top: 3em;
     padding: 0;
 }
@@ -275,7 +327,7 @@ main .employee_gallery_section {
     align-items: center;
     justify-content: space-evenly;
     justify-items: center;
-    max-width: 1280px;
+    max-width: var(--page-max-width);
     margin-top: 3em;
     padding: 0;
 }
@@ -326,7 +378,6 @@ p {
 .contact_us_main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 80px 170px 600px 295px; */
     gap: 0 20px;
 }
 
