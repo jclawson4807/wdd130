@@ -180,7 +180,7 @@ a:hover {
     gap: 20px;
 }
 
-.popular_trips_section h2, .trip_list_table_section h2 {
+.popular_trips_section h2 {
     grid-column: 1 / span 3;
     text-align: center;
     width: 100%;
@@ -247,40 +247,51 @@ a:hover {
     margin: 0 auto;
 }
 
-.trip_list_table_section table {
+.trip_list_table_section h2 {
+    grid-column: 1 / span 3;
+    text-align: center;
     width: 100%;
+    margin-top: 3em;
+}
+
+.trip_list_table_section table {
+    width: 90%;
     max-width: var(--page-max-width);
     padding: 10px;
-    margin: 20px;
     gap: 0px; 
     text-align: left; 
-    background-color: var(--form-background-color);  
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+}
+
+.trip_list_table_section table tr:nth-child(even) {
+    background-color: var(--form-background-color);
 }
 
 .trip_list_table_section table td, .trip_list_table_section table th {
     padding: 10px;
 }
 
-.trip_length_col, th {
+th {
     background-color: var(--primary-color);
     font-weight: 700;
-    width: 8em;
+}
+
+.trip_length_col, .trip_cost_col {
+    width: 5em;
 }
 
 .right_align_text {
     text-align: right;
 }
 
-.trip_cost_col, .trip_difficulty_col, .trip_min_age_col {
+.trip_difficulty_col, .trip_min_age_col {
     width: 7em;
 }
 
 .trip_name_col, .trip_requires_col {
     width: 14em;
-}
-
-.trip_difficulty_col {
-    width: 6em;
 }
 
 .history_section {
