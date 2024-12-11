@@ -128,8 +128,8 @@ a:hover {
 .trips_button {
     width: 20em !important;
     text-wrap: nowrap;
-    margin-bottom: 2em !important;
     align-self: self-end;
+    grid-row: 1 !important;
 }
 
 .hero article {
