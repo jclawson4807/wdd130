@@ -437,13 +437,6 @@ th {
     text-align: center;
 }
 
-.adventure_section figure {
-    grid-row: 2;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-}
-
 figure img {
     width: 200px;
     height: auto;
@@ -465,6 +458,7 @@ main .employee_gallery_section {
     max-width: var(--page-max-width);
     margin-top: 3em;
     padding: 0;
+    text-align: center;
 }
 
 .employee_gallery_section h2 {
@@ -472,12 +466,11 @@ main .employee_gallery_section {
     text-align: center;
 }
 
-.employee_gallery_section figure {
+figure {
     grid-row: 2;
     margin: 0;
     padding: 0;
     width: 200px;
-    text-align: center;
 }
 
 figure figcaption {
@@ -602,7 +595,6 @@ button:hover {
     grid-row: 3;
     height: 596px;
 }
-
 
 footer {
     margin-top: 5em;
