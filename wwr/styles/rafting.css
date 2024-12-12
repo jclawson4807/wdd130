@@ -641,8 +641,6 @@ footer p {
 }
 
 footer a {
-    color: var(--secondary-color);
-    font-family: var(--heading-font);
     text-decoration: none;
     text-align: center;
 }
