@@ -612,9 +612,6 @@ footer {
     justify-self: center;
     background-color: var(--primary-color);
     padding: 0 1em 0 1em;
-}
-
-footer p {
     text-align: center;
 }
 
