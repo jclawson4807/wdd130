@@ -369,19 +369,19 @@ th {
     font-weight: 700;
 }
 
-.trip_cost_col {
-    width: 5em;
-}
-
 .right_align_text {
     text-align: right;
 }
 
-.trip_length_col, .trip_difficulty_col, .trip_min_age_col {
+.trip_col_5_em {
+    width: 5em;
+}
+
+.trip_col_8_em {
     width: 8em;
 }
 
-.trip_name_col, .trip_requires_col, .trip_type_col {
+.trip_col_14_em {
     width: 14em;
 }
 
