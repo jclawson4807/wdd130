@@ -213,6 +213,35 @@ a:hover {
     grid-column: 2;
 }
 
+.newsletter_form {
+    margin: 2em auto 0 auto;
+    padding: 1rem;
+    max-width: var(--form-max-width);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.newsletter_form h2, .newsletter_form h3, .newsletter_form button {
+    text-align: center;
+    grid-column: 1 / span 2;
+    width: 100%;
+    margin-bottom: 0.2em;
+}
+
+.newsletter_form button {
+    width: 10em;
+    margin: 1em auto 0.2em auto;
+}
+
+.newsletter_form .column1 {
+    grid-column: 1;
+}
+
+.newsletter_form .column2 {
+    grid-column: 2;
+}
+
 .popular_trips_section {
     grid-column: 1 / span 6;
     display: grid;
@@ -509,7 +538,7 @@ p {
     margin-top: 2em;  
 }
 
-form {
+.contact_us_form {
     grid-column: 1;
     grid-row: 2 / span 2;
     margin: 0;
