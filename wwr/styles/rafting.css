@@ -350,7 +350,7 @@ a:hover {
 }
 
 .trip_list_table_section table {
-    width: 90%;
+    width: 100%;
     max-width: var(--page-max-width);
     padding: 10px;
     gap: 0px; 
@@ -373,7 +373,7 @@ th {
     font-weight: 700;
 }
 
-.trip_length_col, .trip_cost_col {
+.trip_cost_col {
     width: 5em;
 }
 
@@ -381,11 +381,11 @@ th {
     text-align: right;
 }
 
-.trip_difficulty_col, .trip_min_age_col {
-    width: 7em;
+.trip_length_col, .trip_difficulty_col, .trip_min_age_col {
+    width: 8em;
 }
 
-.trip_name_col, .trip_requires_col {
+.trip_name_col, .trip_requires_col, .trip_type_col {
     width: 14em;
 }
 
