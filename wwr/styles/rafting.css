@@ -195,10 +195,14 @@ a:hover {
 .adventure_types_section figure {
     margin: 0;
     width: 100%;
-    height: 480px;
+    height: 560px;
     border: var(--form-border-width) var(--form-border-style) var(--secondary-color);
     background-color: var(--secondary-color);
     color: var(--accent1-color);
+}
+
+.adventure_types_section figcaption {
+    height: 200px;
 }
 
 .adventure_types_section figure img {
