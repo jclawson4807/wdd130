@@ -234,6 +234,23 @@ a:hover {
     margin: 1em auto 0.2em auto;
 }
 
+.newsletter_form .form-item {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.newsletter_form .form-item label {
+    font-size: 1.1em;
+    margin-bottom: 0.25em;
+    width: 100%;
+}
+
+.newsletter_form .form-item input {
+    font-size: 1.1em;
+    margin-bottom: 0.25em;
+    height: 1.75em;
+}
+
 .newsletter_form .column1 {
     grid-column: 1;
 }
