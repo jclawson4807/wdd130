@@ -128,7 +128,7 @@ a:hover {
     width: 20em !important;
     text-wrap: nowrap;
     align-self: self-end;
-    grid-row: 1 !important;
+    grid-row: 2 !important;
 }
 
 .hero article {
