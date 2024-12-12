@@ -198,17 +198,19 @@ a:hover {
 }
 
 .adventure_type_title {
-    padding: 0.4em;
+    padding: 0.4em 1em 0.4em 1em;
     font-size: 1.5em;
     font-weight: 700;
     width: 100%;
+    text-align: left;
 }
 
 .adventure_type_description {
-    padding: 0.4em;
+    padding: 0.4em 1em 0.4em 1.4em;
     font-size: 1em;
     font-weight: 200;
     width: 100%;
+    text-align: left;
 }
 
 .adventure_types_section figure {
