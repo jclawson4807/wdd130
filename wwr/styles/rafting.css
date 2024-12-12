@@ -197,37 +197,31 @@ a:hover {
     margin-bottom: 0.2em;
 }
 
-.adventure_type_title {
-    padding: 0.4em 1em 0.4em 1em;
-    font-size: 1.5em;
-    font-weight: 700;
-    width: 100%;
-    text-align: left;
-}
-
-.adventure_type_description {
-    padding: 0.4em 1em 0.4em 1.4em;
-    font-size: 1em;
-    font-weight: 200;
-    width: 100%;
-    text-align: left;
-}
-
-.adventure_types_section figure {
+.adventure_types {
     margin: 0;
     width: 100%;
-    height: 560px;
+    height: 580px;
     border: var(--form-border-width) var(--form-border-style) var(--secondary-color);
     background-color: var(--secondary-color);
     color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
 }
 
-.adventure_types_section figcaption {
-    height: 200px;
+.adventure_type_title {
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 0.5em 1em 0.5em 1em;
+    height: 1.2em;
+    margin: 0;
 }
 
-.adventure_types_section figure img {
-   width: 100%; 
+.adventure_type_description {
+    font-weight: 200;
+    font-size: 1em;
+    margin: 0;
+    padding: 1em 1em 0.5em 1.4em;
 }
 
 .newsletter_form {
@@ -301,14 +295,7 @@ a:hover {
     grid-template-columns: 1fr;
 }
 
-/* .popular_trips_section figure figcaption {
-    margin: 0;
-    padding: 10px;
-    width: 100%; 
-    height: 150px;   
-} */
-
-.popular_trips_section .popular_trips_div img {
+.popular_trips_section .popular_trips_div img, .adventure_types img {
     width: 100%;
     height: auto;
     margin: 0;
