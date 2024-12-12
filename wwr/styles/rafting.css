@@ -157,6 +157,26 @@ a:hover {
     float: right;
 }
 
+.grid_column_1 {
+    grid-column: 1;
+}
+
+.grid_column_2 {
+    grid-column: 2;
+}
+
+.grid_column_3 {
+    grid-column: 3;
+}
+
+.grid_column_4 {
+    grid-column: 4;
+}
+
+.grid_column_5 {
+    grid-column: 5;
+}
+
 .adventure_types_section {
     grid-column: 1 / span 6;
     display: grid;
@@ -208,14 +228,6 @@ a:hover {
    width: 100%; 
 }
 
-.adventure_types_section_figure_1 {
-    grid-column: 1;
-}
-
-.adventure_types_section_figure_2 {
-    grid-column: 2;
-}
-
 .newsletter_form {
     margin: 2em auto 0 auto;
     padding: 1rem;
@@ -254,14 +266,6 @@ a:hover {
     height: 1.75em;
 }
 
-.newsletter_form .column1 {
-    grid-column: 1;
-}
-
-.newsletter_form .column2 {
-    grid-column: 2;
-}
-
 .popular_trips_section {
     grid-column: 1 / span 6;
     display: grid;
@@ -296,18 +300,6 @@ a:hover {
     padding: 10px;
     width: 100%; 
     height: 150px;   
-}
-
-.popular_trips_figure_1 {
-    grid-column: 1;
-}
-
-.popular_trips_figure_2 {
-    grid-column: 2;
-}
-
-.popular_trips_figure_3 {
-    grid-column: 3;
 }
 
 .popular_trips_section figure img {
@@ -459,26 +451,6 @@ th {
     width: 200px;    
 }
 
-.adventure_figure_1 {
-    grid-column: 1;
-}
-
-.adventure_figure_2 {
-    grid-column: 2;
-}
-
-.adventure_figure_3 {
-    grid-column: 3;
-}
-
-.adventure_figure_4 {
-    grid-column: 4;
-}
-
-.adventure_figure_5 {
-    grid-column: 5;
-}
-
 .adventure_section figure img {
     width: 200px;
     height: auto;
@@ -520,18 +492,6 @@ main .employee_gallery_section {
     padding: 0;
     width: 200px;
     text-align: center;    
-}
-
-.employee_gallery_section {
-    grid-column: 1;
-}
-
-.employee_gallery_section {
-    grid-column: 2;
-}
-
-.employee_gallery_section {
-    grid-column: 3;
 }
 
 .employee_gallery_section figure img {
@@ -656,14 +616,6 @@ button:hover {
 .office_information_section p {
     height: 50px;
     grid-row: 2;
-}
-
-.office_information_street_address {
-    grid-column: 1;
-}
-
-.office_information_contact_info {
-    grid-column: 2;
 }
 
 .google_map {
