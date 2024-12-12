@@ -508,10 +508,7 @@ p {
     grid-row: 2 / span 2;
     margin: 0;
     max-width: var(--form-max-width);
-    padding-top: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding: 0 1rem 1rem 1rem;
     border: var(--form-border-width) var(--form-border-style) var(--secondary-color);
     border-radius: 0.5rem;
     background-color: var(--form-background-color);
@@ -520,10 +517,7 @@ p {
 
 fieldset {
     display: grid;
-    margin-top: 0;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin: 0 0.75rem 0.75rem 0.75rem;
     border: var(--form-border-width) var(--form-border-style) var(--secondary-color);
     grid-gap: 0.5rem;
     padding: 1rem;
