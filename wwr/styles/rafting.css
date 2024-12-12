@@ -444,12 +444,6 @@ th {
     width: 200px;
 }
 
-.adventure_section figure figcaption {
-    margin: 0;
-    padding: 0;
-    width: 200px;    
-}
-
 figure img {
     width: 200px;
     height: auto;
@@ -483,14 +477,13 @@ main .employee_gallery_section {
     margin: 0;
     padding: 0;
     width: 200px;
+    text-align: center;
 }
 
-.employee_gallery_section figure figcaption {
-    margin: 0;
-    margin-top: 1em;
+figure figcaption {
+    margin: 1em 0 0 0;
     padding: 0;
-    width: 200px;
-    text-align: center;    
+    width: 200px;   
 }
 
 p {
